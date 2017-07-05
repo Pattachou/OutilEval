@@ -7,25 +7,37 @@ class StringFormatter
     
     private $string;
     
-    public function __construct(string $string) {
+    public function __construct($string) {
         $this->string = $string;
     }
     
-    public function concat(string $str1, string $str2) {
-        
+    public function concat($str1, $str2) {
+        $concat = $str1.$str2;
+        return $concat;
     }
     
-    public function toCamelCase(string $str1, string $str2) {
-        
+    public function toCamelCase($str1, $str2) {
+        $str1 = ucfirst(strtolower ($str1));
+        $str2 = ucfirst(strtolower ($str2));
+        $concat = $str1.$str2;
+        return $concat;
     }
     
     
-    public function prefix(string $str, string $pref, bool $toCamelCase=false) {
-        
+    public function prefix($str, $pref, $toCamelCase=false) {
+        if($toCamelCase) {
+            return toCamelCase($pref,$str);
+        } else {
+            return concat($pref,$str);
+        }
     }
     
-    public function suffix(string $str, string $suf, bool $toCamelCase=false) {
-        
+    public function suffix($str, $suf, $toCamelCase=false) {
+        if($toCamelCase) {
+            return toCamelCase($str,$suf);
+        } else {
+            return concat($str,$suf);
+        }
     }
     
 }
