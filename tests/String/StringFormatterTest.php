@@ -2,46 +2,37 @@
 
     namespace tests\String;
 
-    use String\StringFormatter;
+use String\StringFormatter;
     use Model\String;
     use PHPUnit\Framework\TestCase;
 
     class StringFormatterTest extends TestCase
     {
-       private $string;
+        private $string;
         
-        public function setUp() 
+        public function setUp()
         {
             $this->string = new string("test");
         }
         
         
-        public function testConcat() 
+        public function testConcat()
         {
-            
-            $string = concat("test","test1");
-            
+            $string = concat("test", "test1");
         }
       
-        public function testToCamelCase() 
+        public function testToCamelCase()
         {
-            $string = testToCamelCase("test","test1");
-        
+            $string = testToCamelCase("test", "test1");
         }
             
-        public function testPrefix() 
+        public function testPrefix()
         {
-            $string = testPrefix("test","test1");
-        
+            $string = testPrefix("test", "test1");
         }
             
-        public function testSuffix() 
+        public function testSuffix()
         {
-        
-            $string = testSuffix("test","test1");
+            $string = testSuffix("test", "test1");
         }
-        
-        
     }
-
-?>

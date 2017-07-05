@@ -22,6 +22,10 @@ class ComposerStaticInit924dd581079cff9a384b513f159b875a
         array (
             'Webmozart\\Assert\\' => 17,
         ),
+        'T' => 
+        array (
+            'Tests\\' => 6,
+        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Php72\\' => 23,
@@ -63,6 +67,10 @@ class ComposerStaticInit924dd581079cff9a384b513f159b875a
         'Webmozart\\Assert\\' => 
         array (
             0 => __DIR__ . '/..' . '/webmozart/assert/src',
+        ),
+        'Tests\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/tests',
         ),
         'Symfony\\Polyfill\\Php72\\' => 
         array (
@@ -132,6 +140,10 @@ class ComposerStaticInit924dd581079cff9a384b513f159b875a
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
         ),
+    );
+
+    public static $fallbackDirsPsr4 = array (
+        0 => __DIR__ . '/../..' . '/src',
     );
 
     public static $prefixesPsr0 = array (
@@ -696,6 +708,7 @@ class ComposerStaticInit924dd581079cff9a384b513f159b875a
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit924dd581079cff9a384b513f159b875a::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit924dd581079cff9a384b513f159b875a::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInit924dd581079cff9a384b513f159b875a::$fallbackDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInit924dd581079cff9a384b513f159b875a::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit924dd581079cff9a384b513f159b875a::$classMap;
 
