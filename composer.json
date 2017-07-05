@@ -1,0 +1,13 @@
+{
+    "name": "charles/outil-eval",
+    "require": {
+        "phpunit/phpunit": "^6.2",
+        "friendsofphp/php-cs-fixer": "^2.3"
+    },
+    "authors": [
+        {
+            "name": "Charles",
+            "email": "charles.tardy@hotmail.com"
+        }
+    ]
+}
